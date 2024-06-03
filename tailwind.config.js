@@ -13,8 +13,8 @@ export default {
     colors: {
       primary: {
         200: "#ffffff", // almost white
-        400: "#f7911d", // dark origin
-        500: "#b97b34", // light origin
+        400: "#f97316", // dark origin
+        500: "#fb923c", // light origin
         600: "#99235C", // wine
       },
       grayscale: {
@@ -22,7 +22,7 @@ export default {
         50: "#b97b34",
         100: "#efefef",
         200: "#FDFDFF",
-        950: "#f7911d",
+        950: "#ea580c",
       },
     },
   },
