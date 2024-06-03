@@ -7,42 +7,65 @@
    Last modification: 02/06/2023
 */
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles";
 import { navLinks } from "../../constants/index.js";
-import { bl33hIcon, menu, close } from "../../assets/index.js";
+import { bl33hIcon, menu, close, avatar } from "../../assets/index.js";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className={`
-      ${styles.paddingX} w-full flex items-center py-5
-      fixed top-0 z-20 bg-primary
-    `}
+      className={
+        scrolled
+          ? `
+            ${styles.paddingX} w-full flex items-center py-5
+            fixed top-0 z-20 bg-primary navbar scrolled
+          `
+          : `
+            ${styles.paddingX} w-full flex items-center py-5
+            fixed top-0 z-20 bg-primary navbar
+          `
+      }
     >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <img
-            src={bl33hIcon}
-            alt={bl33hIcon}
-            className="w-18 h-9 object-contain"
+            src={avatar}
+            alt="no avatar"
+            className="w-18 h-11 object-contain rounded-2xl"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex"></p>
         </Link>
         <ul
           className="list-none hidden sm:flex flex-row gap-10"
-          style={{ color: "#b3286c" }}
+          style={{ color: "#f7911d" }}
         >
           {navLinks.map((link) => {
             return (
@@ -96,4 +119,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

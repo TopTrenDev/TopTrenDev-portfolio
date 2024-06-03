@@ -47,7 +47,7 @@ const ContactForm = () => {
       <div>
         <h2
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
-          className="message text-7xl bg-primary-400 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
+          className="message text-6xl bg-primary-400 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
         >
           <Typewriter words={["LET'S GET IN TOUCH!"]} loop={true} />
           &nbsp;
@@ -139,4 +139,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

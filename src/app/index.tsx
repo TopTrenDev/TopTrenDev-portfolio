@@ -16,7 +16,6 @@ import { media } from "../constants";
 
 import "./index.css";
 import "font-awesome/css/font-awesome.min.css";
-import "#/fonts/Morganite/morganiteFont.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -27,4 +26,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-

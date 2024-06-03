@@ -13,7 +13,12 @@
 
 @font-face {
   font-family: "SuperMario";
-  src: url(/Fonts/Mario/Brugty.ttf);
+  src: url(../../public/fonts/super-candy-cufonfonts/Super\ Candy.ttf);
+}
+
+@font-face {
+  font-family: "Morganite Black";
+  src: url(../../public/fonts/Morganite/Morganite-Black.ttf);
 }
 
 * {
@@ -50,13 +55,13 @@ body {
 #repulse-div {
   -webkit-appearance: none;
   appearance: none;
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #b64d80);
+  -webkit-filter: drop-shadow(0 0 5rem #fdba74);
+  filter: drop-shadow(0 0 5rem #fb923c);
 }
 
 #repulse-div > h1 {
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #eec5d9);
+  -webkit-filter: drop-shadow(0 0 5rem #fdba74);
+  filter: drop-shadow(0 0 5rem #fdba74);
 }
 
 #journey-scroll::-webkit-scrollbar {
@@ -71,7 +76,7 @@ body {
 .arrowpath,
 polyline {
   fill: none;
-  stroke: #b64d80;
+  stroke: #fb923c;
   stroke-width: 2;
 }
 
@@ -94,7 +99,7 @@ polyline {
   border-collapse: separate;
   background-size: cover;
   background-position: center;
-  outline: 1px #b64d80;
+  outline: 1px #fb923c;
 }
 
 @keyframes morph {
@@ -123,7 +128,7 @@ polyline {
 .bounce:hover {
   display: inline-block;
   animation: rubberband 0.8s ease-out;
-  color: #763b57;
+  color: #b97b34;
 }
 
 @keyframes rubberband {
@@ -154,15 +159,15 @@ polyline {
   .drop-shadow-div {
     -webkit-appearance: none;
     appearance: none;
-    -webkit-filter: drop-shadow(0 0 1.5rem #eec5d9);
-    filter: drop-shadow(0 0 1.5rem #eec5d9);
+    -webkit-filter: drop-shadow(0 0 1.5rem #fed7aa);
+    filter: drop-shadow(0 0 1.5rem #fed7aa);
   }
 }
 
 .loader {
   width: 100px;
   height: 100px;
-  border: 5px solid #b64d80;
+  border: 5px solid #fb923c;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -178,7 +183,7 @@ polyline {
   height: 80px;
   border-radius: 50%;
   border: 5px solid;
-  border-color: #b64d80 transparent;
+  border-color: #fb923c transparent;
 }
 
 @keyframes rotation {
@@ -190,3 +195,18 @@ polyline {
   }
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  transition: background 0.3s ease;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  backdrop-filter: blur(7px);
+}
