@@ -35,6 +35,10 @@ import pawsitivePrototype from "./projects/pawsitive.jpeg";
 import plProject from "./projects/pl.png";
 import solanashuffleProject from "./projects/solanashuffle.png";
 import wlfProject from "./projects/wlf.png";
+import raffleProject from "./projects/raffle.png";
+import realEstateProject from "./projects/estate.png";
+import robverseProject from "./projects/robverse.png";
+import swaplaceProject from "./projects/swaplace.png";
 
 // Avatar
 import avatar from "./avatar/avatar.jpg";
@@ -62,6 +66,10 @@ export {
   plProject,
   solanashuffleProject,
   wlfProject,
+  raffleProject,
+  realEstateProject,
+  robverseProject,
+  swaplaceProject,
   avatar,
   bl33hIcon,
 };

@@ -13,12 +13,12 @@
 
 @font-face {
   font-family: "SuperMario";
-  src: url(../../public/fonts/super-candy-cufonfonts/Super\ Candy.ttf);
+  src: url("../../public/fonts/super-candy-cufonfonts/Super Candy.ttf");
 }
 
 @font-face {
   font-family: "Morganite Black";
-  src: url(../../public/fonts/Morganite/Morganite-Black.ttf);
+  src: url("../../public/fonts/Morganite/Morganite-Black.ttf");
 }
 
 * {

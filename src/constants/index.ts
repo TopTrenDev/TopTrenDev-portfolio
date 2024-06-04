@@ -44,6 +44,10 @@ import {
   solanashuffleProject,
   avatar,
   wlfProject,
+  raffleProject,
+  realEstateProject,
+  robverseProject,
+  swaplaceProject,
 } from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -145,23 +149,12 @@ export const projects = [
     demo_link: "https://youtu.be/Mk1BNqPz1n4",
   },
   {
-    name: "Visit Our Lands",
+    name: "Aptos Raffle War",
     description:
-      "It is a recommendation system built with React and Supabase. This system focuses on providing tourist recommendations for various locations in Guatemala.",
-    image:
-      "https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/uvd82gspopw8orvryulc",
+      " NFT Game on Aptos, where users on the blockchain compete for a tempting prize of APT, with their NFTs.",
+    image: raffleProject,
     source_code_link: "",
-    demo_link: "https://visitourlands.netlify.app/",
-  },
-  {
-    name: "Exploring The Space",
-    description:
-      "The program uses OpenGL and C++ to render celestial bodies with dynamic realism. It includes a shader-based pipeline and a camera that follows a spaceship for added interactivity.",
-    image:
-      "https://camo.githubusercontent.com/1f7fb7873058b029992d30b8601d2c36582f6bb399482c560d5560c2d02fc37e/68747470733a2f2f6d65646961342e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784d4773314e6d733459336c6a4e4752684e3270354f574a33625456304f484675616d77314d574a314e6d31344d4849786254567963535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f76553246666b6d386e6744494e336d6d36572f67697068792e676966",
-    source_code_link: "",
-    demo_link:
-      "https://camo.githubusercontent.com/1f7fb7873058b029992d30b8601d2c36582f6bb399482c560d5560c2d02fc37e/68747470733a2f2f6d65646961342e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784d4773314e6d733459336c6a4e4752684e3270354f574a33625456304f484675616d77314d574a314e6d31344d4849786254567963535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f76553246666b6d386e6744494e336d6d36572f67697068792e676966",
+    demo_link: "https://raffle-war-demo.netlify.app/",
   },
   {
     name: "Disney Plus Replica",
@@ -173,24 +166,28 @@ export const projects = [
     demo_link: "https://disneyplusreplica.netlify.app",
   },
   {
-    name: "Deep Dive Odyssey Raycasting",
+    name: "Lotus Revenu",
     description:
-      "The code represents a raycasting graphics application with a Finding Pirate Treasure Under the Sea theme. It creates a 3D perspective effect by simulating rays of light and their interactions with a map.",
-    image:
-      "https://camo.githubusercontent.com/94f800b79d759c06717af7d816a16ccff75a0101c942ca9ad3c562d0dd2c9404/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784f4870736432527a5a575a6a616e4e366547513364473172616e64755a576b306457357262336f79596d527964584636646a413264535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f634b4c57543837305a4a39587769706e57772f67697068792e676966",
+      "It is a real estate system where you reserve the property first and pay through electronic payment in Spain.",
+    image: realEstateProject,
     source_code_link: "",
-    demo_link:
-      "https://camo.githubusercontent.com/94f800b79d759c06717af7d816a16ccff75a0101c942ca9ad3c562d0dd2c9404/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784f4870736432527a5a575a6a616e4e366547513364473172616e64755a576b306457357262336f79596d527964584636646a413264535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f634b4c57543837305a4a39587769706e57772f67697068792e676966",
+    demo_link: "https://real-estate-spain-demo.netlify.app/",
   },
   {
-    name: "Fibonacci & Factorial",
+    name: "Robverse",
     description:
-      "A project that includes two LISP programs: one for factorials and the other for Fibonacci sequences. They use recursion, prompt user input, and display results efficiently.",
-    image:
-      "https://i.pinimg.com/originals/96/c3/9a/96c39a5cb89092760fe11f355a32f4a4.gif",
+      "Robverse is a company site that specializes in game development, focusing on Roblox games.",
+    image: robverseProject,
     source_code_link: "",
-    demo_link:
-      "https://camo.githubusercontent.com/59b3c9969f369559fbeb1ed6a53f159e0e83b1151b82552b5b2165c4e9686e89/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31612f4669626f6e616363695f63616c6c5f747265655f352e676966",
+    demo_link: "https://feedhive-demo.netlify.app/",
+  },
+  {
+    name: "Swaplace",
+    description:
+      "Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and Feeless environment designed for swaps.",
+    image: swaplaceProject,
+    source_code_link: "",
+    demo_link: "https://swaplace.xyz/",
   },
 ];
 
@@ -200,27 +197,6 @@ export const memoji = {
 
 export const skills = [
   {
-    id: "html",
-    title: "HTML",
-    icon: htmlIcon,
-    description:
-      "I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.",
-  },
-  {
-    id: "css",
-    title: "CSS",
-    icon: cssIcon,
-    description:
-      "I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.",
-  },
-  {
-    id: "javascript",
-    title: "JavaScript",
-    icon: jsIcon,
-    description:
-      "I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.",
-  },
-  {
     id: "react",
     title: "React",
     icon: reactIcon,
@@ -228,39 +204,11 @@ export const skills = [
       "I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.",
   },
   {
-    id: "java",
-    title: "Java",
-    icon: javaIcon,
-    description:
-      "I have extensive experience utilizing Java for object-oriented programming (OOP) and implementing data structures.",
-  },
-  {
     id: "aws",
     title: "Amazon Web Services",
     icon: awsIcon,
     description:
       "I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.",
-  },
-  {
-    id: "figma",
-    title: "Figma",
-    icon: figmaIcon,
-    description:
-      "In my Figma skills, I unleash creativity, designing captivating user interfaces and collaborating seamlessly with designers and developers.",
-  },
-  {
-    id: "git",
-    title: "Git",
-    icon: gitIcon,
-    description:
-      "I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.",
-  },
-  {
-    id: "github",
-    title: "GitHub",
-    icon: githubIcon,
-    description:
-      "I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking. Through GitHub, I efficiently create and manage repositories and effectively present my work to potential employers.",
   },
   {
     id: "psql",
@@ -277,39 +225,11 @@ export const skills = [
       "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
   },
   {
-    id: "py",
-    title: "Python",
-    icon: pyIcon,
-    description:
-      "With 3 years of Python experience, I am adept at coding functions and creating graphic interfaces using Tkinter.",
-  },
-  {
     id: "node",
     title: "Node",
     icon: nodeIcon,
     description:
       "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
-  },
-  {
-    id: "neo",
-    title: "Neo4j",
-    icon: neoIcon,
-    description:
-      "I am knowledgeable in Neo4j, the graph database management system. I have expertise in utilizing GraphOS to build robust recommendation systems, leveraging the strength of graph-based data modeling.",
-  },
-  {
-    id: "raspi",
-    title: "Raspberry Pi",
-    icon: raspIcon,
-    description:
-      "I have hands-on experience with Raspberry Pi, where I utilized a virtual Linux machine to execute programs written in assembly language. This allowed me to explore low-level computing and develop efficient code for the Raspberry Pi platform.",
-  },
-  {
-    id: "eslint",
-    title: "Eslint",
-    icon: eslintIcon,
-    description:
-      "I utilize ESLint to identify and resolve code issues, as well as standardize the structure of my projects. With ESLint, I ensure code quality and consistency throughout my development process.",
   },
 ];
 
