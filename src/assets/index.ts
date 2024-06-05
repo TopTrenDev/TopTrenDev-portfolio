@@ -27,6 +27,11 @@ import pyIcon from "./tech/py.png";
 import nodeIcon from "./tech/node.webp";
 import neoIcon from "./tech/neo.png";
 import raspIcon from "./tech/raspi.png";
+import goIcon from "./tech/go.png";
+import solidityIcon from "./tech/solidity.png";
+import mongodbIcon from "./tech/mongodb.png";
+import rustIcon from "./tech/rust.png";
+
 import close from "./close.svg";
 import menu from "./menu.svg";
 
@@ -39,6 +44,8 @@ import raffleProject from "./projects/raffle.png";
 import realEstateProject from "./projects/estate.png";
 import robverseProject from "./projects/robverse.png";
 import swaplaceProject from "./projects/swaplace.png";
+import blastariansProject from "./projects/blastarians.jpeg";
+import rafflorProject from "./projects/rafflor.png";
 
 // Avatar
 import avatar from "./avatar/avatar.jpg";
@@ -62,6 +69,10 @@ export {
   viteIcon,
   neoIcon,
   raspIcon,
+  goIcon,
+  solidityIcon,
+  rustIcon,
+  mongodbIcon,
   pawsitivePrototype,
   plProject,
   solanashuffleProject,
@@ -70,6 +81,8 @@ export {
   realEstateProject,
   robverseProject,
   swaplaceProject,
+  blastariansProject,
+  rafflorProject,
   avatar,
   bl33hIcon,
 };

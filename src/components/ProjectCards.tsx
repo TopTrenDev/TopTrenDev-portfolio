@@ -139,11 +139,22 @@ const ProjectCard = ({
     >
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <div className="relative">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
-          />
+          {image.indexOf("mp4") > 0 ? (
+            <video
+              className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
+              autoPlay
+            >
+              <source src={image} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
+            />
+          )}
+
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}

@@ -39,15 +39,19 @@ import {
   raspIcon,
   neoIcon,
   figmaIcon,
-  pawsitivePrototype,
   plProject,
   solanashuffleProject,
   avatar,
   wlfProject,
   raffleProject,
   realEstateProject,
-  robverseProject,
   swaplaceProject,
+  blastariansProject,
+  rafflorProject,
+  goIcon,
+  solidityIcon,
+  mongodbIcon,
+  rustIcon,
 } from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -149,6 +153,13 @@ export const projects = [
     demo_link: "https://youtu.be/Mk1BNqPz1n4",
   },
   {
+    name: "Rafflor",
+    description: "Raffle on Aptos",
+    image: rafflorProject,
+    source_code_link: "",
+    demo_link: "https://rafflor.aptosmonkeys.club/",
+  },
+  {
     name: "Aptos Raffle War",
     description:
       " NFT Game on Aptos, where users on the blockchain compete for a tempting prize of APT, with their NFTs.",
@@ -168,18 +179,18 @@ export const projects = [
   {
     name: "Lotus Revenu",
     description:
-      "It is a real estate system where you reserve the property first and pay through electronic payment in Spain.",
+      "Lotus is your partner to grow your revenue and brand. From campaigns and projects to monthly support, staff development, or temporary department staffing, watch your revenue and brand.",
     image: realEstateProject,
     source_code_link: "",
-    demo_link: "https://real-estate-spain-demo.netlify.app/",
+    demo_link: "https://www.grow-with-lotus.com/",
   },
   {
-    name: "Robverse",
+    name: "FeedHive",
     description:
-      "Robverse is a company site that specializes in game development, focusing on Roblox games.",
-    image: robverseProject,
+      "FeedHive is an AI-driven platform that delivers a fantastic user experience.",
+    image: "https://www.feedhive.com/images/create-post.mp4",
     source_code_link: "",
-    demo_link: "https://feedhive-demo.netlify.app/",
+    demo_link: "https://www.feedhive.com/",
   },
   {
     name: "Swaplace",
@@ -189,6 +200,14 @@ export const projects = [
     source_code_link: "",
     demo_link: "https://swaplace.xyz/",
   },
+  {
+    name: "Blastarians",
+    description:
+      "All Blastarians NFT holders will be eligible for our free $ALPHA tokens airdrop claim.",
+    image: blastariansProject,
+    source_code_link: "",
+    demo_link: "https://blastarians.xyz/",
+  },
 ];
 
 export const memoji = {
@@ -197,25 +216,25 @@ export const memoji = {
 
 export const skills = [
   {
+    id: "solidity",
+    title: "Solidity",
+    icon: solidityIcon,
+    description:
+      "I'm well-versed in Solidity's syntax, semantics, and best practices for developing smart contracts on the EVM. I'm familiar with Solidity's features, including inheritance, structuring, as well as common libraries and frameworks.",
+  },
+  {
+    id: "rust",
+    title: "Rust",
+    icon: rustIcon,
+    description:
+      "I've worked with Rust's ecosystem, including Cargo, crates, and libraries, and have experience with concurrency and error handling using the language's built-in features.",
+  },
+  {
     id: "react",
     title: "React",
     icon: reactIcon,
     description:
       "I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.",
-  },
-  {
-    id: "aws",
-    title: "Amazon Web Services",
-    icon: awsIcon,
-    description:
-      "I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.",
-  },
-  {
-    id: "psql",
-    title: "Postgresql",
-    icon: psqlIcon,
-    description:
-      "I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.",
   },
   {
     id: "vite",
@@ -225,11 +244,39 @@ export const skills = [
       "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
   },
   {
+    id: "aws",
+    title: "Amazon Web Services",
+    icon: awsIcon,
+    description:
+      "I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.",
+  },
+  {
+    id: "mongo",
+    title: "MongoDB",
+    icon: mongodbIcon,
+    description:
+      "I've experience with MongoDB replication, sharding, and aggregation pipeline features, as well as using the official drivers and third-party tools for integration and querying.",
+  },
+  {
+    id: "psql",
+    title: "Postgresql",
+    icon: psqlIcon,
+    description:
+      "I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.",
+  },
+  {
     id: "node",
     title: "Node",
     icon: nodeIcon,
     description:
       "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
+  },
+  {
+    id: "go",
+    title: "Go",
+    icon: goIcon,
+    description:
+      "I'm familiar with Go's syntax, concurrency model, and standard library, including goroutines and channels. I've worked with Go's networking and web development features, as well as its use cases in distributed systems and data processing.",
   },
 ];
 
