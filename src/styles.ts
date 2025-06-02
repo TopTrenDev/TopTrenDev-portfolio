@@ -1,9 +1,11 @@
-/* Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-     @author Sara Echeverria
-     FileName: styles.js
-     @version: I
-     Creation: 02/06/2023
-     Last modification: 03/06/2023 */
+/*
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: styles.ts
+   Version: 2.3.0
+   Creation: 02/06/2023
+   Last modification: 27/04/2025
+*/
 
 export const styles = {
   paddingX: "sm:px-16 px-6",

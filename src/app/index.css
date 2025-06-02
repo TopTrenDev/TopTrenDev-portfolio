@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
    FileName: index.css
-   Version: I
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 02/06/2023
+   Last modification: 27/04/2025
 */
 
 @tailwind base;
@@ -13,12 +13,12 @@
 
 @font-face {
   font-family: "SuperMario";
-  src: url("../../public/fonts/super-candy-cufonfonts/Super Candy.ttf");
+  src: url("/fonts/super-candy-cufonfonts/Super Candy.ttf");
 }
 
 @font-face {
   font-family: "Morganite Black";
-  src: url("../../public/fonts/Morganite/Morganite-Black.ttf");
+  src: url("/fonts/Morganite/Morganite-Black.ttf");
 }
 
 * {

@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: ProjectCards.jsx
-   Version: I
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: ProjectCards.tsx
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 19/04/2024
+   Last modification: 27/04/2025
 */
 
 import { motion } from "framer-motion";
@@ -155,7 +155,7 @@ const ProjectCard = ({
             />
           )}
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
@@ -166,7 +166,7 @@ const ProjectCard = ({
                 className="w-full h-full object-contain"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mt-3">
           <h3 className="text-white font-bold text-2xl">{name}</h3>

@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: Projects.jsx
-   Version: I
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: Projects.tsx
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 20/04/2024
+   Last modification: 27/04/2025
 */
 
 import Works from "../components/ProjectCards";

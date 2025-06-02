@@ -59,7 +59,7 @@ const About = () => {
                 >
                   {introduction.text[3]}
                 </span>
-                <a href="https://cvdesignr.com/p/646a21d6917ed" target="_blank">
+                <a href="https://cvdesignr.com/p/67ce95ed01b92" target="_blank">
                   <span
                     className="text-[#b17837]"
                     style={{ fontSize: "0.95em", fontWeight: "700" }}

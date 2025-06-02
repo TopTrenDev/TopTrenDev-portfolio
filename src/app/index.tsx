@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: index.jsx
-   Version: I
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: index.tsx
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 02/06/2023
+   Last modification: 27/04/2025
 */
 
 import React from "react";

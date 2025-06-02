@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
    FileName: constants.js
-   Version: I
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 18/12/2023
+   Last modification: 27/04/2025
 */
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -20,6 +20,7 @@ import {
   faReact,
   faGithub,
   faLinkedin,
+  faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -45,6 +46,7 @@ import {
   wlfProject,
   raffleProject,
   realEstateProject,
+  feedHiveProject,
   swaplaceProject,
   blastariansProject,
   rafflorProject,
@@ -86,16 +88,17 @@ export const icons = {
   faGithub,
   faLinkedin,
   faEnvelope,
+  faTelegram,
 };
 
 export const introduction = {
   text: [
-    "Hello there, thank you for visiting my portfolio 🤤",
+    "Hi there, thank you for visiting my portfolio 👋",
 
-    "My name is Harry Anderson, I am a senior smart contract developer and full stack developer. I have a strong passion for the technologies related to Web3.",
-    "As a result of having more than 9 years of full-stack development experience and 4 years of Web3 technology expertise, I provide full-stack and smart contract services as a Web3 developer in various distributed systems and networks.",
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences. Your visit to my portfolio is deeply appreciated !",
-    "You can check & download my resume here.",
+    "My name is Marek Dvojak. I am a blockchain developer specializing in Solana and Rust smart contracts, with a strong passion for working with cutting-edge technologies in full-stack and AI development.",
+    "With over 6 years of full-stack development experience and 4 years of hands-on Solana expertise, I enjoy building robust blockchain and full-stack applications.",
+    "I truly value collaborating with individuals and teams who share my enthusiasm for creating impactful, innovative experiences. Your visit to my portfolio means a lot to me!",
+    "Feel free to view or download my resume here.",
   ],
 };
 
@@ -188,7 +191,7 @@ export const projects = [
     name: "FeedHive",
     description:
       "FeedHive is an AI-driven platform that delivers a fantastic user experience.",
-    image: "https://www.feedhive.com/images/create-post.mp4",
+    image: feedHiveProject,
     source_code_link: "",
     demo_link: "https://www.feedhive.com/",
   },

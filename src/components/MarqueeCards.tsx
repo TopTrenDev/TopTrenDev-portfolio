@@ -1,12 +1,11 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: MarqueeCards.jsx
-   Version: I
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: MarqueeCards.tsx
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 27/04/2025
 */
-
 import Marquee from "react-fast-marquee";
 
 interface MarqueeCardsProps {

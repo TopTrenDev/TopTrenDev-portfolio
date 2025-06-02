@@ -40,7 +40,7 @@ const Contact = () => {
         <SocialLinks />
         <div className="bg-grayscale-950 flex justify-center pb-4 text-primary-200">
           <span>
-            Edited by <em>Harry Anderson (evilgon)</em>
+            Edited by <em>Marek Dvojak (TopTrenDev)</em>
           </span>
         </div>
       </div>

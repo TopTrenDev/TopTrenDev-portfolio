@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: ContactForm.jsx
-   Version: I
+   Copyright (C), 2023-2025, Marek Dvojak
+   Author: Marek Dvojak
+   FileName: ContactForm.tsx
+   Version: 2.3.0
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 27/04/2025
 */
 
 import { useRef, useState } from "react";
@@ -19,12 +19,24 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("whoisevilgon", "template1", e.target, "JjC_Nnt4rUsjIsRtz")
+      .sendForm(
+        "toptrendev_portfolio",
+        "template_itioruz",
+        e.target,
+        "OpDniNYfc23yJCvMb"
+      )
       .then(
         () => {
-          document.getElementById("contact_form")!.onreset!(e);
+          formDiv.current?.reset();
           setIsSent(true);
           alert("Thank you I will get back to you as soon as possible ! (:");
+
+          console.log("Sending email with values:", {
+            name: formDiv.current?.from_name?.value,
+            last: formDiv.current?.from_last?.value,
+            email: formDiv.current?.from_email?.value,
+            message: formDiv.current?.message?.value,
+          });
         },
         (error) => {
           console.error(error);
