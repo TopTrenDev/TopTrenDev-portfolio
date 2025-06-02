@@ -1,61 +1,58 @@
-# TopTrenDev's Portfolio
+# 🚀 TopTrenDev's Portfolio
 
-Welcome to my portfolio repository! This project showcases my skills using React, ESLint, Tailwind, and Vite. It includes a brief introduction about me, my projects, the technologies I've worked with, and my experience. You'll also find a contact form at the bottom and my social media links below it. Feel free to explore and connect with me!
+Welcome to my personal portfolio built with modern web technologies like **React**, **Tailwind CSS**, **Vite**, and **EmailJS**. This project highlights my skills, showcases projects I’ve built, and provides a contact form for collaboration opportunities.
 
-<p align="center">
-  <br>
-  <img src="https://i.imgur.com/YjFLrzx.png" alt="wb" width="400">
-  <br>
-</p>
-<p align="center" >
-  <a href="#features">Features</a> •
-  <a href="#Files">Files</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#packages">Packages</a>   
-</p>
-<p align="center" >
-<a href="https://TopTrenDev_Portfolio.vercel.app/">Try it out here</a> 
+<p align="left">
+  <a href="https://TopTrenDev_Portfolio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀 Visit My Portfolio-7c3aed?style=for-the-badge&labelColor=7c3aed&color=7c3aed" alt="Visit Portfolio" />
+  </a>
 </p>
 
-## Features
+---
 
-- Vite
+## ✨ Features
+
+- ⚡️ Blazing-fast development with **Vite**
+- 🎨 Fully responsive UI with **Tailwind CSS**
+- 💌 Contact form with **EmailJS**
+- 📁 Modular and maintainable folder structure
+
+---
+
+## 🛠 Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **EmailJS**
+- **TypeScript**
+
+---
+
+## ⚙️ Getting Started
+
+Make sure you have Node.js and Git installed.
+
+### Clone the repo
 
 ```bash
-# Install dependencies
-$ npm i
-# run the app
-$ npm run dev
+git clone https://github.com/TopTrenDev/TopTrenDev-portfolio
 ```
 
-## Files
-
-- src: the file that implements de solution.
-- assets: resources that are used in an application.
-- components: reusable pieces of code that define the appearance and behavior of a part of the UI.
-- pages: the different areas of the portfolio.
-- constants: values that cannot be altered by the program during normal execution.
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en) and [Vite](https://vitejs.dev/) installed on your computer. From your command line:
+### Navigate into the project folder
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/TopTrenDev/TopTrenDev-portfolio
-
-# Install dependencies
-$ npm i
-
-# Run the app
-$ npm run dev
+cd TopTrenDev-portfolio
 ```
 
-## Packages
+### Install dependencies
 
-This software uses the following open source packages:
+```bash
+npm install
+```
 
-- [Vite](https://vitejs.dev/)
-- [React](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com/)
+### Start development server
 
+```bash
+npm run dev
+```
