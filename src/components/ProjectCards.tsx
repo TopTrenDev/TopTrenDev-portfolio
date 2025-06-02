@@ -10,7 +10,7 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
-import { githubIcon } from "../assets";
+// import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
   return {
@@ -125,7 +125,7 @@ const ProjectCard = ({
   name,
   description,
   image,
-  source_code_link,
+  // source_code_link,
   demo_link,
 }: ProjectCardProps) => {
   return (
