@@ -59,9 +59,9 @@ const ContactForm = () => {
       <div>
         <h2
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
-          className="message text-6xl bg-primary-400 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
+          className="message bg-green-400 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
         >
-          <Typewriter words={["LET'S GET IN TOUCH!"]} loop={true} />
+          <Typewriter words={["REACH OUT ANYTIME!"]} loop={true} />
           &nbsp;
         </h2>
       </div>
@@ -73,39 +73,41 @@ const ContactForm = () => {
           target="_blank"
           onSubmit={sendEmail}
           style={{ fontFamily: "Poppins, sans-serif" }}
-          className="w-[80%] h-full flex flex-col gap-4 pt-4 text-primary-200"
+          className="w-[80%] h-full flex flex-col gap-4 pt-4 text-green-200"
         >
-          <div className="w-full flex flex-col">
-            <label
-              htmlFor="firstname"
-              style={{ fontWeight: "bold", fontSize: "18px" }}
-            >
-              First Name
-            </label>
-            <input
-              className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
-              placeholder="Enter your First Name"
-              id="firstname"
-              type="text"
-              name="from_name"
-              required
-            />
-          </div>
-          <div className="w-full flex flex-col">
-            <label
-              htmlFor="lastname"
-              style={{ fontWeight: "bold", fontSize: "18px" }}
-            >
-              Last Name
-            </label>
-            <input
-              className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
-              placeholder="Enter your Last Name"
-              id="lastname"
-              type="text"
-              name="from_last"
-              required
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="w-full flex flex-col">
+              <label
+                htmlFor="firstname"
+                style={{ fontWeight: "bold", fontSize: "18px" }}
+              >
+                First Name
+              </label>
+              <input
+                className="p-[0.5em] rounded-xl text-grayscale-950 bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                placeholder="Enter your First Name"
+                id="firstname"
+                type="text"
+                name="from_name"
+                required
+              />
+            </div>
+            <div className="w-full flex flex-col">
+              <label
+                htmlFor="lastname"
+                style={{ fontWeight: "bold", fontSize: "18px" }}
+              >
+                Last Name
+              </label>
+              <input
+                className="p-[0.5em] rounded-xl text-grayscale-950 bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                placeholder="Enter your Last Name"
+                id="lastname"
+                type="text"
+                name="from_last"
+                required
+              />
+            </div>
           </div>
           <div className="w-full flex flex-col">
             <label
@@ -115,7 +117,7 @@ const ContactForm = () => {
               E-mail
             </label>
             <input
-              className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
+              className="p-[0.5em] rounded-xl text-grayscale-950 bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your E-mail"
               id="email"
               type="email"
@@ -131,7 +133,7 @@ const ContactForm = () => {
               Message
             </label>
             <textarea
-              className="p-[0.5em] rounded-xl text-grayscale-950 bac bg-primary-200"
+              className="p-[0.5em] rounded-xl text-grayscale-950 bg-green-200 min-h-[150px] sm:min-h-[120px] md:min-h-[150px] resize-none w-full focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your message..."
               name="message"
               required
@@ -139,7 +141,7 @@ const ContactForm = () => {
           </div>
           <div className="w-full flex justify-center">
             <input
-              className="w-[100px] h-[50px] bg-primary-400 rounded-xl cursor-pointer hover:bg-primary-700 mb-5"
+              className="w-[100px] h-[50px] bg-green-400 rounded-xl cursor-pointer hover:bg-green-700 mb-5"
               type="submit"
               value={!isSent ? "Send" : "Done!"}
             />

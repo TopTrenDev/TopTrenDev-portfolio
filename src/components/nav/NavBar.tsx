@@ -40,11 +40,11 @@ const Navbar = () => {
         scrolled
           ? `
             ${styles.paddingX} w-full flex items-center py-5
-            fixed top-0 z-20 bg-primary navbar scrolled
+            fixed top-0 z-20 bg-green navbar scrolled
           `
           : `
             ${styles.paddingX} w-full flex items-center py-5
-            fixed top-0 z-20 bg-primary navbar
+            fixed top-0 z-20 bg-green navbar
           `
       }
     >
@@ -65,7 +65,7 @@ const Navbar = () => {
         </Link>
         <ul
           className="list-none hidden sm:flex flex-row gap-10"
-          style={{ color: "#f7911d" }}
+          style={{ color: "#22c55e" }}
         >
           {navLinks.map((link) => {
             return (

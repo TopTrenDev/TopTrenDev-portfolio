@@ -96,7 +96,7 @@ export const heroOptions = {
         duration: 0.4,
         size: 40,
         color: {
-          value: "#b45309",
+          value: "#22c55e",
         },
         opacity: 8,
         mix: false,
@@ -117,7 +117,7 @@ export const heroOptions = {
       mode: "bounce",
     },
     color: {
-      value: "#b45309",
+      value: "#22c55e",
     },
     move: {
       angle: {
@@ -208,7 +208,7 @@ export const heroOptions = {
     lineLinked: {
       blink: false,
       color: {
-        value: "#b45309",
+        value: "#22c55e",
       },
       consent: true,
       distance: 100,
