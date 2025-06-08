@@ -36,32 +36,32 @@ const About = () => {
                 className="text-grayscale-50 p-6 text-center flex flex-col gap-5"
               >
                 <span
-                  className="text-[#f7911d]"
+                  className="text-[#22c55e]"
                   style={{ fontSize: "1.2em", fontWeight: "900" }}
                 >
                   {introduction.text[0]}
                 </span>
                 <span
-                  className="text-[#da9343]"
+                  className="text-[#4CAF50]"
                   style={{ fontSize: "0.95em", fontWeight: "500" }}
                 >
                   {introduction.text[1]}
                 </span>
                 <span
-                  className="text-[#da9343]"
+                  className="text-[#4CAF50]"
                   style={{ fontSize: "0.95em", fontWeight: "500" }}
                 >
                   {introduction.text[2]}
                 </span>
                 <span
-                  className="text-[#da9343]"
+                  className="text-[#4CAF50]"
                   style={{ fontSize: "0.95em", fontWeight: "500" }}
                 >
                   {introduction.text[3]}
                 </span>
                 <a href="https://cvdesignr.com/p/67ce95ed01b92" target="_blank">
                   <span
-                    className="text-[#b17837]"
+                    className="text-[#629C34]"
                     style={{ fontSize: "0.95em", fontWeight: "700" }}
                   >
                     {introduction.text[4].split("here")[0]}

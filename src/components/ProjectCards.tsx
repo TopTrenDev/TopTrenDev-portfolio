@@ -169,7 +169,7 @@ const ProjectCard = ({
           </div> */}
         </div>
         <div className="mt-3">
-          <h3 className="text-white font-bold text-2xl">{name}</h3>
+          <h3 className="text-grayscale-50 font-bold text-2xl">{name}</h3>
           <p className="mt-2 text-secondary text-[14px] leading-snug">
             {description}
           </p>
@@ -177,7 +177,7 @@ const ProjectCard = ({
         <div className="mt-2 flex flex-wrap gap-1"></div>
         <div className="mt-3 flex justify-center items-center">
           <a
-            className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+            className="shadow-md drop-shadow-green p-2 bg-tertiary rounded-lg flex justify-center"
             href={demo_link}
             target="_blank"
           >

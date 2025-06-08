@@ -138,14 +138,14 @@ export const projects = [
     source_code_link: "",
     demo_link: "https://www.solanashuffle.com/",
   },
-  {
-    name: "Women Life Freedom",
-    description:
-      "A humanitarian effort to celebrate and support women across the globe through art and web3.",
-    image: wlfProject,
-    source_code_link: "https://github.com/sourlodine/Women-Life-Freedom-App",
-    demo_link: "https://0xwlf.io/",
-  },
+  // {
+  //   name: "Women Life Freedom",
+  //   description:
+  //     "A humanitarian effort to celebrate and support women across the globe through art and web3.",
+  //   image: wlfProject,
+  //   source_code_link: "https://github.com/sourlodine/Women-Life-Freedom-App",
+  //   demo_link: "https://0xwlf.io/",
+  // },
   {
     name: "Client-Server Chat",
     description:
@@ -204,14 +204,14 @@ export const projects = [
     source_code_link: "",
     demo_link: "https://swaplace.xyz/",
   },
-  {
-    name: "Blastarians",
-    description:
-      "All Blastarians NFT holders will be eligible for our free $ALPHA tokens airdrop claim.",
-    image: blastariansProject,
-    source_code_link: "",
-    demo_link: "https://blastarians.xyz/",
-  },
+  // {
+  //   name: "Blastarians",
+  //   description:
+  //     "All Blastarians NFT holders will be eligible for our free $ALPHA tokens airdrop claim.",
+  //   image: blastariansProject,
+  //   source_code_link: "",
+  //   demo_link: "https://blastarians.xyz/",
+  // },
 ];
 
 export const memoji = {
@@ -224,14 +224,14 @@ export const skills = [
     title: "Solidity",
     icon: solidityIcon,
     description:
-      "I'm well-versed in Solidity's syntax, semantics, and best practices for developing smart contracts on the EVM. I'm familiar with Solidity's features, including inheritance, structuring, as well as common libraries and frameworks.",
+      "I'm proficient in Solidity, including its syntax, inheritance, structuring, and best practices for EVM-based smart contract development.",
   },
   {
     id: "rust",
     title: "Rust",
     icon: rustIcon,
     description:
-      "I've worked with Rust's ecosystem, including Cargo, crates, and libraries, and have experience with concurrency and error handling using the language's built-in features.",
+      "I'm experienced with Rust's ecosystem, including Cargo, crates, concurrency, and error handling using its native features.",
   },
   {
     id: "react",
@@ -245,42 +245,42 @@ export const skills = [
     title: "Vite",
     icon: viteIcon,
     description:
-      "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
+      "I've used Vite for about six months to build React sites and deploy them smoothly on platforms like Netlify.",
   },
   {
     id: "aws",
     title: "Amazon Web Services",
     icon: awsIcon,
     description:
-      "I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.",
+      "I'm certified in AWS with hands-on experience managing EC2 and RDS for scalable, reliable cloud infrastructure.",
   },
   {
     id: "mongo",
     title: "MongoDB",
     icon: mongodbIcon,
     description:
-      "I've experience with MongoDB replication, sharding, and aggregation pipeline features, as well as using the official drivers and third-party tools for integration and querying.",
+      "I have experience with MongoDB replication, sharding, and aggregation pipelines, using both official drivers and third-party tools for integration and queries.",
   },
   {
     id: "psql",
     title: "Postgresql",
     icon: psqlIcon,
     description:
-      "I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.",
+      "I have strong PostgreSQL skills, including normalization, triggers, front-end integration, and data analysis with tools like Power BI.",
   },
   {
     id: "node",
     title: "Node",
     icon: nodeIcon,
     description:
-      "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
+      "I prefer Node.js as my runtime for building scalable web applications and have expertise in using it to develop robust backend systems.",
   },
   {
     id: "go",
     title: "Go",
     icon: goIcon,
     description:
-      "I'm familiar with Go's syntax, concurrency model, and standard library, including goroutines and channels. I've worked with Go's networking and web development features, as well as its use cases in distributed systems and data processing.",
+      "I'm familiar with Go's syntax, concurrency, and standard library, with experience in networking, web development, and distributed systems.",
   },
 ];
 

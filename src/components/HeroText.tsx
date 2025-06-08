@@ -14,7 +14,7 @@ const HeroText = () => {
 
   return (
     <div
-      className="noselect w-fit h-fit text-primary-200 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
+      className="noselect w-fit h-fit text-green-200 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
       id="repulse-div"
     >
       <LazyMotion features={domAnimation} strict>
@@ -44,7 +44,7 @@ const HeroText = () => {
               return (
                 <span
                   key={index}
-                  className="text-[#f7911d] bounce hover:text-[#995a11]"
+                  className="text-[#22c55e] bounce hover:text-[#166534]"
                   style={{ fontSize: "1.2em" }}
                 >
                   {char}

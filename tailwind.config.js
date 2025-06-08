@@ -9,20 +9,21 @@ export default {
       dropShadow: {
         green: "0 0 10rem #29c26f",
       },
-    },
-    colors: {
-      primary: {
-        200: "#ffffff", // almost white
-        400: "#f97316", // dark origin
-        500: "#fb923c", // light origin
-        600: "#99235C", // wine
-      },
-      grayscale: {
-        25: "#E4E2DD", // beige
-        50: "#b97b34",
-        100: "#efefef",
-        200: "#FDFDFF",
-        950: "#ea580c",
+      colors: {
+        green: {
+          200: "#f0fff4", // light mint green
+          400: "#22c55e", // medium green (like Tailwind's emerald-500)
+          500: "#4ade80", // soft green
+          600: "#166534", // deep forest green
+        },
+        grayscale: {
+          25: "#E4E2DD", // beige
+          50: "#4CAF50", // brown-gold
+          100: "#efefef", // light gray
+          200: "#FDFDFF", // off white
+          950: "#022c22", // deep green-black
+        },
+        secondary: "#22c55e",
       },
     },
   },

@@ -38,9 +38,9 @@ const Contact = () => {
       </div>
       <div className="w-full flex flex-col">
         <SocialLinks />
-        <div className="bg-grayscale-950 flex justify-center pb-4 text-primary-200">
+        <div className="bg-grayscale-950 flex justify-center pb-4 text-green-200">
           <span>
-            Edited by <em>Marek Dvojak (TopTrenDev)</em>
+            Edited by <em>Marek Dvojak</em>(TopTrenDev)
           </span>
         </div>
       </div>
