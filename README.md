@@ -32,25 +32,22 @@ Welcome to my personal portfolio built with modern web technologies like **React
 
 Make sure you have Node.js and Git installed.
 
-### Clone the repo
-
+👉 **Clone the repo**
 ```bash
 git clone https://github.com/TopTrenDev/TopTrenDev-portfolio
 ```
 
-### Navigate into the project folder
-
+👉 **Navigate into the project folder**
 ```bash
 cd TopTrenDev-portfolio
 ```
 
-### Install dependencies
-
+👉 **Install dependencies**
 ```bash
 npm install
 ```
 
-### Start development server
+👉 **Start development server**
 
 ```bash
 npm run dev
