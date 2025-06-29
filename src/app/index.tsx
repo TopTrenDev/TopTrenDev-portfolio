@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: index.tsx
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";

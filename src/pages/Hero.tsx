@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: Hero.tsx
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import HeroText from "../components/HeroText";
 import HeroParticles from "../components/Particles/HeroParticles";

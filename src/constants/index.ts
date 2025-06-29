@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: constants.js
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faX,
@@ -41,15 +32,16 @@ import {
   neoIcon,
   figmaIcon,
   plProject,
-  solanashuffleProject,
   avatar,
-  wlfProject,
   raffleProject,
-  realEstateProject,
+  lotusProject,
   feedHiveProject,
   swaplaceProject,
-  blastariansProject,
   rafflorProject,
+  rivetAIProject,
+  wooshiworldProject,
+  petenottageProject,
+  copytradebotProject,
   goIcon,
   solidityIcon,
   mongodbIcon,
@@ -123,29 +115,50 @@ export const navLinks = [
 
 export const projects = [
   {
-    name: "Pioneer Legends",
+    name: "Rafflor",
     description:
-      "Pioneer Legends represents the next frontier in the Web3 space, offering an immersive experience that harnesses the potential of crypto mining, diverse DeFi investments, and the transformative power of NFTs to bestow rewards upon its esteemed holders.",
-    image: plProject,
+      "Rafflor is a Web3 raffle platform on Aptos, offering fair, on-chain giveaways for the Aptos Monkeys community.",
+    image: rafflorProject,
     source_code_link: "",
-    demo_link: "https://www.pioneerlegends.com/",
+    demo_link: "https://rafflor.aptosmonkeys.club/",
+    category: "Aptos Chain",
   },
   {
-    name: "Solana shuffle",
+    name: "Aptos Raffle War",
     description:
-      "Solana Shuffle is a casino-type gambling site that features tower games, jackpots, and coinflip played with SOL. Supports both single and multiplayer modes.",
-    image: solanashuffleProject,
+      "NFT Game on Aptos, where users on the blockchain compete for a tempting prize of APT, with their NFTs.",
+    image: raffleProject,
     source_code_link: "",
-    demo_link: "https://www.solanashuffle.com/",
+    demo_link: "https://raffle-war-demo.netlify.app/",
+    category: "Aptos Chain",
   },
-  // {
-  //   name: "Women Life Freedom",
-  //   description:
-  //     "A humanitarian effort to celebrate and support women across the globe through art and web3.",
-  //   image: wlfProject,
-  //   source_code_link: "https://github.com/sourlodine/Women-Life-Freedom-App",
-  //   demo_link: "https://0xwlf.io/",
-  // },
+  {
+    name: "Lotus Revenu",
+    description:
+      "Grow With Lotus offers personalized coaching and courses to help individuals achieve emotional wellness, self-growth, and life balance.",
+    image: lotusProject,
+    source_code_link: "",
+    demo_link: "https://www.grow-with-lotus.com/",
+    category: "Web",
+  },
+  {
+    name: "FeedHive",
+    description:
+      "Feedhive is a powerful social media management platform that helps creators and businesses schedule, publish, and analyze content with AI-driven tools.",
+    image: feedHiveProject,
+    source_code_link: "",
+    demo_link: "https://www.feedhive.com/",
+    category: "AI",
+  },
+  {
+    name: "Swaplace",
+    description:
+      "Swaplace is an open-source, feeless, cross-chain P2P DEX built on EVM chains, offering direct multi-token swaps without intermediaries—designed for developers to build on top.",
+    image: swaplaceProject,
+    source_code_link: "",
+    demo_link: "https://swaplace.xyz/",
+    category: "Ethereum",
+  },
   {
     name: "Client-Server Chat",
     description:
@@ -154,64 +167,80 @@ export const projects = [
       "https://i.pinimg.com/originals/0e/4a/c3/0e4ac37acbff81cd087aa19692a07a9d.gif",
     source_code_link: "",
     demo_link: "https://youtu.be/Mk1BNqPz1n4",
+    category: "AI",
   },
   {
-    name: "Rafflor",
+    name: "Pioneer Legends",
     description:
-      "Rafflor is a decentralized raffle platform built on the Aptos blockchain, designed to facilitate transparent and secure NFT giveaways and raffles within the Aptos ecosystem.",
-    image: rafflorProject,
+      "Pioneer Legends represents the next frontier in the Web3 space, offering an immersive experience that harnesses the potential of crypto mining, diverse DeFi investments, and the transformative power of NFTs to bestow rewards upon its esteemed holders.",
+    image: plProject,
     source_code_link: "",
-    demo_link: "https://rafflor.aptosmonkeys.club/",
+    demo_link: "https://www.pioneerlegends.io/",
+    category: "Solana",
   },
   {
-    name: "Aptos Raffle War",
+    name: "RivetAI",
     description:
-      " NFT Game on Aptos, where users on the blockchain compete for a tempting prize of APT, with their NFTs.",
-    image: raffleProject,
+      "Rivet AI is reshaping creative production with cutting-edge AI-driven tools, empowering storytellers and production teams to streamline workflows, enhance content quality, and unlock unprecedented efficiency in the film and media industry.",
+    image: rivetAIProject,
     source_code_link: "",
-    demo_link: "https://raffle-war-demo.netlify.app/",
-  },
-  // {
-  //   name: "Disney Plus Replica",
-  //   description:
-  //     "A replica of the Disney+ principal page built using React and Vite. The Vitest and Storybook technologies were also implemented for testing.",
-  //   image:
-  //     "https://camo.githubusercontent.com/5d85ae990f2b7b9a0f4d6246168b7995fc930d59d127a15c3c4ea18eb2a5001b/68747470733a2f2f6c756d696572652d612e616b616d616968642e6e65742f76312f696d616765732f65735f686f7573652d6f662d6469736e65792d706c75735f6d6f625f6d5f35376437663836652e6a7065673f726567696f6e3d302c302c3830302c3630302677696474683d373638",
-  //   source_code_link: "",
-  //   demo_link: "https://disneyplusreplica.netlify.app",
-  // },
-  {
-    name: "Lotus Revenu",
-    description:
-      "Lotus is your partner to grow your revenue and brand. From campaigns and projects to monthly support, staff development, or temporary department staffing, watch your revenue and brand.",
-    image: realEstateProject,
-    source_code_link: "",
-    demo_link: "https://www.grow-with-lotus.com/",
+    demo_link: "https://rivetai.com/",
+    category: "AI",
   },
   {
-    name: "FeedHive",
+    name: "WOOSHI WORLD",
     description:
-      "FeedHive is an AI-driven platform that delivers a fantastic user experience.",
-    image: feedHiveProject,
+      "Wooshi World delivers a vibrant fusion of gaming, NFTs, and culture, inviting players into an animated metaverse where digital ownership meets storytelling, and community participation defines the evolution of its playful, immersive universe.",
+    image: wooshiworldProject,
     source_code_link: "",
-    demo_link: "https://www.feedhive.com/",
+    demo_link: "https://www.wooshi.world/",
+    category: "Ethereum",
   },
   {
-    name: "Swaplace",
+    name: "PETE NOTTAGE",
     description:
-      "Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and Feeless environment designed for swaps.",
-    image: swaplaceProject,
+      "Pete Nottage's portfolio site showcases the dynamic range of a seasoned voice-over artist and presenter, combining crisp audio craftsmanship with a modern design aesthetic to connect clients with compelling and professional vocal talent.",
+    image: petenottageProject,
     source_code_link: "",
-    demo_link: "https://swaplace.xyz/",
+    demo_link: "https://petenottage.co.uk/",
+    category: "Web",
   },
-  // {
-  //   name: "Blastarians",
-  //   description:
-  //     "All Blastarians NFT holders will be eligible for our free $ALPHA tokens airdrop claim.",
-  //   image: blastariansProject,
-  //   source_code_link: "",
-  //   demo_link: "https://blastarians.xyz/",
-  // },
+  {
+    name: "Solana Copy Trading Bot",
+    description:
+      "A Solana copy trading bot mirrors top wallet strategies across major DEXs—like Raydium, Jupiter, and Pump.fun—in real time, empowering users to automate trades on autopilot.",
+    image: copytradebotProject,
+    source_code_link: "",
+    // demo_link: "https://petenottage.co.uk/",
+    category: "Solana",
+  },
+  {
+    name: "Pumpfun Volume Bot",
+    description:
+      "PumpFun Volume Bot is an automated Solana-based trading tool that boosts your meme token's activity by simulating realistic buy/sell volume across multiple wallets—making it trend faster on platforms like Pump.fun.",
+    image: copytradebotProject,
+    source_code_link: "",
+    // demo_link: "https://petenottage.co.uk/",
+    category: "Solana",
+  },
+  {
+    name: "Raydium Volume Bot (latest)",
+    description:
+      "Raydium Volume Bot is an automated Solana trading tool designed to boost SPL token activity on Raydium. It spins up multiple wallets to perform buy and sell swaps, creating high on-chain volume and increased visibility for your token.",
+    image: copytradebotProject,
+    source_code_link: "",
+    // demo_link: "https://petenottage.co.uk/",
+    category: "Solana",
+  },
+  {
+    name: "Pumpfun Sniper Bot",
+    description:
+      "Solana sniper bot that automatically targets and buys newly minted Pump.Fun tokens the moment they launch—designed for real-time detection and instant execution so you never miss the pump.",
+    image: copytradebotProject,
+    source_code_link: "",
+    // demo_link: "https://petenottage.co.uk/",
+    category: "Solana",
+  },
 ];
 
 export const memoji = {

@@ -1,15 +1,7 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: ProjectCards.tsx
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
+import { useState } from "react";
 // import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
@@ -117,7 +109,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   source_code_link: string;
-  demo_link: string;
+  demo_link?: string;
 }
 
 const ProjectCard = ({
@@ -189,12 +181,54 @@ const ProjectCard = ({
   );
 };
 
+// const Works = () => {
+//   return (
+//     <div className="mt-5 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
+//       {projects.map((project, index) => (
+//         <ProjectCard key={`project-${index}`} index={index} {...project} />
+//       ))}
+//     </div>
+//   );
+// };
+
+const categories = ["All", "Solana", "Ethereum", "Aptos Chain", "AI", "Web"];
+
 const Works = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredProjects =
+    activeCategory === "All"
+      ? projects
+      : projects.filter(
+          (project) =>
+            project.category?.toLowerCase() === activeCategory.toLowerCase()
+        );
+
   return (
-    <div className="mt-5 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
-      {projects.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project} />
-      ))}
+    <div className="w-full">
+      {/* Category Buttons */}
+      <div className="flex flex-wrap gap-2 justify-center mb-12">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`px-8 py-1 mx-1 rounded-full text-lg font-semibold border ${
+              activeCategory === category
+                ? "bg-tertiary text-[#275527] border-[#275527]"
+                : "bg-transparent text-secondary border-secondary"
+            } hover:bg-tertiary hover:text-white transition-all`}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      {/* Project Cards */}
+      <div className="mt-5 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full">
+        {filteredProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
     </div>
   );
 };

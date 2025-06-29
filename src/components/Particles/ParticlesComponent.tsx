@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: ParticlesComponent.tsx
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";

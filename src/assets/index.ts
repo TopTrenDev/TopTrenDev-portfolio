@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: Index.ts
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 // Logo
 import bl33hIcon from "/logo/icon.png";
 
@@ -36,17 +27,16 @@ import close from "/close.svg";
 import menu from "/menu.svg";
 
 // Projects
-import pawsitivePrototype from "/projects/pawsitive.jpeg";
 import plProject from "/projects/pl.png";
-import solanashuffleProject from "/projects/solanashuffle.png";
-import wlfProject from "/projects/wlf.png";
 import raffleProject from "/projects/raffle.png";
-import realEstateProject from "/projects/estate.png";
-import robverseProject from "/projects/robverse.png";
+import lotusProject from "/projects/lotus.png";
 import feedHiveProject from "/projects/feedHive.png";
 import swaplaceProject from "/projects/swaplace.png";
-import blastariansProject from "/projects/blastarians.jpeg";
 import rafflorProject from "/projects/rafflor.png";
+import rivetAIProject from "/projects/rivetAI.png";
+import wooshiworldProject from "/projects/wooshiworld.png";
+import petenottageProject from "/projects/petenottage.png";
+import copytradebotProject from "/projects/copytradebot.jpg";
 
 // Avatar
 import avatar from "/avatar/avatar.webp";
@@ -74,17 +64,16 @@ export {
   solidityIcon,
   rustIcon,
   mongodbIcon,
-  pawsitivePrototype,
   plProject,
-  solanashuffleProject,
-  wlfProject,
   raffleProject,
-  realEstateProject,
-  robverseProject,
+  lotusProject,
   feedHiveProject,
   swaplaceProject,
-  blastariansProject,
   rafflorProject,
+  rivetAIProject,
+  wooshiworldProject,
+  petenottageProject,
+  copytradebotProject,
   avatar,
   bl33hIcon,
 };

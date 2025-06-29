@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2025, Marek Dvojak
-   Author: Marek Dvojak
-   FileName: Arrow.tsx
-   Version: 2.3.0
-   Creation: 02/06/2023
-   Last modification: 27/04/2025
-*/
-
 const Arrow = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
