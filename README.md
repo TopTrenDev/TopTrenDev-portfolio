@@ -55,3 +55,13 @@ npm install
 ```bash
 npm run dev
 ```
+
+---
+
+## 📬 Contact Me
+
+I'm always happy to connect, collaborate, or just chat tech! 🚀
+
+- 🐦 **Twitter / X:** [@toptrendev](https://x.com/toptrendev)
+- 💬 **Discord:** [toptrendev#0001](https://discord.com/users/648385188774019072)
+- 📲 **Telegram:** [@toptrendev](https://t.me/toptrendev)
