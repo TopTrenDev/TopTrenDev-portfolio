@@ -37,6 +37,11 @@ import rivetAIProject from "/projects/rivetAI.png";
 import wooshiworldProject from "/projects/wooshiworld.png";
 import petenottageProject from "/projects/petenottage.png";
 import copytradebotProject from "/projects/copytradebot.jpg";
+import volumebotProject from "/projects/volumebot.jpg";
+import sniperbotProject from "/projects/sniperbot.jpg";
+import plinkoProject from "/projects/plinko.png";
+import jackpotProject from "/projects/jackpot.png";
+import pumpfunProject from "/projects/pumpfun.webp";
 
 // Avatar
 import avatar from "/avatar/avatar.webp";
@@ -74,6 +79,11 @@ export {
   wooshiworldProject,
   petenottageProject,
   copytradebotProject,
+  volumebotProject,
+  sniperbotProject,
+  plinkoProject,
+  jackpotProject,
+  pumpfunProject,
   avatar,
   bl33hIcon,
 };

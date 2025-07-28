@@ -42,6 +42,11 @@ import {
   wooshiworldProject,
   petenottageProject,
   copytradebotProject,
+  volumebotProject,
+  sniperbotProject,
+  plinkoProject,
+  jackpotProject,
+  pumpfunProject,
   goIcon,
   solidityIcon,
   mongodbIcon,
@@ -151,6 +156,33 @@ export const projects = [
     category: "AI",
   },
   {
+    name: "Solana Solbet Jackpot Game",
+    description:
+      "A Solana jackpot game where players deposit tokens into a pool and one lucky winner takes it all—secured by on-chain randomness and lightning-fast transactions.",
+    image: jackpotProject,
+    source_code_link: "",
+    demo_link: "https://solpot.com/",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
+    name: "Solana Plinko Game",
+    description:
+      "A Solana Plinko game where players drop tokens to bounce through pegs and land in prize slots—combining luck, strategy, and fast, low-cost on-chain gameplay.",
+    image: plinkoProject,
+    source_code_link: "",
+    demo_link: "https://spribe.co/games/plinko",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
+    name: "Pump.fun Fork Smart Contract",
+    description:
+      "A Pump.fun fork smart contract that enables fair token launches with bonding curve-based pricing, auto-liquidity provisioning, and community-driven price discovery—all fully on-chain.",
+    image: pumpfunProject,
+    source_code_link: "",
+    // demo_link: "https://petenottage.co.uk/",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
     name: "Swaplace",
     description:
       "Swaplace is an open-source, feeless, cross-chain P2P DEX built on EVM chains, offering direct multi-token swaps without intermediaries—designed for developers to build on top.",
@@ -218,7 +250,7 @@ export const projects = [
     name: "Pumpfun Volume Bot",
     description:
       "PumpFun Volume Bot is an automated Solana-based trading tool that boosts your meme token's activity by simulating realistic buy/sell volume across multiple wallets—making it trend faster on platforms like Pump.fun.",
-    image: copytradebotProject,
+    image: volumebotProject,
     source_code_link: "",
     // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
@@ -227,7 +259,7 @@ export const projects = [
     name: "Raydium Volume Bot (latest)",
     description:
       "Raydium Volume Bot is an automated Solana trading tool designed to boost SPL token activity on Raydium. It spins up multiple wallets to perform buy and sell swaps, creating high on-chain volume and increased visibility for your token.",
-    image: copytradebotProject,
+    image: volumebotProject,
     source_code_link: "",
     // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
@@ -236,7 +268,7 @@ export const projects = [
     name: "Pumpfun Sniper Bot",
     description:
       "Solana sniper bot that automatically targets and buys newly minted Pump.Fun tokens the moment they launch—designed for real-time detection and instant execution so you never miss the pump.",
-    image: copytradebotProject,
+    image: sniperbotProject,
     source_code_link: "",
     // demo_link: "https://petenottage.co.uk/",
     category: "Solana",

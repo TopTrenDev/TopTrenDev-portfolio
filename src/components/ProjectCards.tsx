@@ -191,7 +191,15 @@ const ProjectCard = ({
 //   );
 // };
 
-const categories = ["All", "Solana", "Ethereum", "Aptos Chain", "AI", "Web"];
+const categories = [
+  "All",
+  "Solana",
+  "Ethereum",
+  "Aptos Chain",
+  "AI",
+  "Web",
+  "Smart Contract",
+];
 
 const Works = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -199,10 +207,16 @@ const Works = () => {
   const filteredProjects =
     activeCategory === "All"
       ? projects
-      : projects.filter(
-          (project) =>
-            project.category?.toLowerCase() === activeCategory.toLowerCase()
-        );
+      : projects.filter((project) => {
+          const cat = project.category;
+          if (Array.isArray(cat)) {
+            return cat.some(
+              (c: string) => c.toLowerCase() === activeCategory.toLowerCase()
+            );
+          } else {
+            return cat.toLowerCase() === activeCategory.toLowerCase();
+          }
+        });
 
   return (
     <div className="w-full">
