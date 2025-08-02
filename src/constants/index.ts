@@ -44,6 +44,7 @@ import {
   copytradebotProject,
   volumebotProject,
   sniperbotProject,
+  bonkfunProject,
   plinkoProject,
   jackpotProject,
   pumpfunProject,
@@ -238,12 +239,19 @@ export const projects = [
     category: "Web",
   },
   {
+    name: "LetsBonkFun Bundler Bot",
+    description:
+      "Letsbonk.fun bundler bot that automates token creation, bonding curve deployment, and metadata setup—streamlining meme coin launches into a single, gas-efficient on-chain transaction.",
+    image: bonkfunProject,
+    source_code_link: "",
+    category: "Solana",
+  },
+  {
     name: "Solana Copy Trading Bot",
     description:
       "A Solana copy trading bot mirrors top wallet strategies across major DEXs—like Raydium, Jupiter, and Pump.fun—in real time, empowering users to automate trades on autopilot.",
     image: copytradebotProject,
     source_code_link: "",
-    // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
   },
   {
@@ -252,7 +260,6 @@ export const projects = [
       "PumpFun Volume Bot is an automated Solana-based trading tool that boosts your meme token's activity by simulating realistic buy/sell volume across multiple wallets—making it trend faster on platforms like Pump.fun.",
     image: volumebotProject,
     source_code_link: "",
-    // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
   },
   {
@@ -261,7 +268,6 @@ export const projects = [
       "Raydium Volume Bot is an automated Solana trading tool designed to boost SPL token activity on Raydium. It spins up multiple wallets to perform buy and sell swaps, creating high on-chain volume and increased visibility for your token.",
     image: volumebotProject,
     source_code_link: "",
-    // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
   },
   {
@@ -270,7 +276,6 @@ export const projects = [
       "Solana sniper bot that automatically targets and buys newly minted Pump.Fun tokens the moment they launch—designed for real-time detection and instant execution so you never miss the pump.",
     image: sniperbotProject,
     source_code_link: "",
-    // demo_link: "https://petenottage.co.uk/",
     category: "Solana",
   },
 ];

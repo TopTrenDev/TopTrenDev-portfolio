@@ -10,7 +10,7 @@ const SocialLinks = () => {
           icon={icons.faGithub}
         />
       </a>
-      <a href="https://t.me/toptrendev" target="_blank">
+      <a href="https://t.me/toptrendev_641" target="_blank">
         <FontAwesomeIcon
           className="text-3xl text-grayscale-25 hover:text-green-200 hover:scale-[1.1] transition-all duration-75"
           icon={icons.faTelegram}

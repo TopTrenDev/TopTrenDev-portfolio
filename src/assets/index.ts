@@ -39,6 +39,7 @@ import petenottageProject from "/projects/petenottage.png";
 import copytradebotProject from "/projects/copytradebot.jpg";
 import volumebotProject from "/projects/volumebot.jpg";
 import sniperbotProject from "/projects/sniperbot.jpg";
+import bonkfunProject from "/projects/bonkfun.png";
 import plinkoProject from "/projects/plinko.png";
 import jackpotProject from "/projects/jackpot.png";
 import pumpfunProject from "/projects/pumpfun.webp";
@@ -81,6 +82,7 @@ export {
   copytradebotProject,
   volumebotProject,
   sniperbotProject,
+  bonkfunProject,
   plinkoProject,
   jackpotProject,
   pumpfunProject,
