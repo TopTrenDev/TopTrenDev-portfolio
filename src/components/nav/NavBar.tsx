@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { m, LazyMotion, domAnimation } from "framer-motion";
+import { createPortal } from "react-dom";
 import { styles } from "../../styles";
 import { navLinks } from "../../constants/index.js";
 import { avatar } from "../../assets/index.js";
@@ -106,18 +107,19 @@ const Navbar = () => {
         animate="visible"
         className={`
           ${styles.paddingX} w-full flex items-center py-4
-          fixed top-0 z-20 transition-all duration-500
+          fixed top-0 transition-all duration-500
           ${scrolled 
             ? 'bg-gradient-to-r from-white/95 via-white/90 to-white/95 dark:from-gray-900/95 dark:via-gray-900/90 dark:to-gray-900/95 backdrop-blur-xl shadow-2xl border-b-2 border-green-400/30' 
             : 'bg-transparent'
           }
         `}
-        data-theme={theme}
         style={{
+          zIndex: 999999,
           boxShadow: scrolled 
             ? '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(34, 197, 94, 0.1)' 
             : 'none'
         }}
+        data-theme={theme}
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           {/* Logo */}
@@ -205,7 +207,7 @@ const Navbar = () => {
                       transition-all duration-300 cursor-pointer group
                       ${active === link.title 
                         ? 'text-white dark:text-gray-900' 
-                        : 'text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400'
+                        : 'text-gray-700 dark:text-white hover:text-green-600 dark:hover:text-green-300'
                       }
                     `}
                   >
@@ -307,17 +309,30 @@ const Navbar = () => {
               <div className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-all duration-300"></div>
             </m.button>
             
-            {toggle && (
-              <m.div
-                variants={mobileMenuVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                className="absolute top-20 right-4 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-6 min-w-[220px] z-50 backdrop-blur-xl"
-                style={{
-                  boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(34, 197, 94, 0.1)'
-                }}
-              >
+            {toggle && createPortal(
+              <>
+                {/* Backdrop overlay to isolate from background */}
+                <m.div
+                  className="fixed inset-0 bg-black/30"
+                  style={{ zIndex: 999998 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setToggle(false)}
+                />
+                
+                {/* Mobile menu */}
+                <m.div
+                  variants={mobileMenuVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="fixed top-20 right-4 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-6 min-w-[220px] backdrop-blur-xl"
+                  style={{
+                    zIndex: 999999,
+                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(34, 197, 94, 0.1)'
+                  }}
+                >
                 {/* Animated background pattern */}
                 <div className="absolute inset-0 bg-gradient-to-r from-green-400/5 via-green-500/10 to-green-400/5 rounded-2xl"></div>
                 
@@ -392,7 +407,9 @@ const Navbar = () => {
                 {/* Decorative elements */}
                 <div className="absolute top-2 right-2 w-2 h-2 bg-green-400 rounded-full animate-ping opacity-60"></div>
                 <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-green-500 rounded-full animate-ping opacity-40 delay-100"></div>
-              </m.div>
+                </m.div>
+              </>,
+              document.body
             )}
           </div>
         </div>
