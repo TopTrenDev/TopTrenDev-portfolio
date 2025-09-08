@@ -4,8 +4,8 @@ import SkillsCards from "../components/SkillsCards";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full overflow-hidden-web flex justify-center">
-      <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
+    <div id="skills" className="w-full flex justify-center overflow-hidden-web">
+      <div className="w-full xl:w-[70%] flex flex-col pb-16">
         <div className="w-full">
           <SectionTitle title="SKILLS" subtitle="WHAT I DO" />
         </div>
