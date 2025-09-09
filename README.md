@@ -4,7 +4,7 @@ Welcome to my personal portfolio built with modern web technologies like **React
 
 [![Twitter](https://img.shields.io/badge/Twitter-@toptrendev-black?style=for-the-badge&logo=twitter&logoColor=1DA1F2)](https://x.com/toptrendev)
 [![Discord](https://img.shields.io/badge/Discord-toptrendev-black?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.com/users/648385188774019072)
-[![Telegram](https://img.shields.io/badge/Telegram-@TopTrenDev_66-black?style=for-the-badge&logo=telegram&logoColor=2CA5E0)](https://t.me/TopTrenDev_66)
+[![Telegram](https://img.shields.io/badge/Telegram-@toptrendev_641-black?style=for-the-badge&logo=telegram&logoColor=2CA5E0)](https://t.me/toptrendev_641)
 
 ---
 
@@ -16,7 +16,7 @@ Welcome to my personal portfolio built with modern web technologies like **React
 - 📁 Modular and maintainable folder structure
 
 <p align="left">
-  <a href="https://toptrendev.vercel.app/" target="_blank">
+  <a href="https://top-tren-dev-portfolio.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀 Visit My Portfolio-7c3aed?style=for-the-badge&labelColor=7c3aed&color=7c3aed" alt="Visit Portfolio" />
   </a>
 </p>
@@ -29,3 +29,33 @@ Welcome to my personal portfolio built with modern web technologies like **React
 - **Vite**
 - **Tailwind CSS**
 - **TypeScript**
+
+---
+
+## ⚙️ Getting Started
+
+Make sure you have Node.js and Git installed.
+
+### Clone the repo
+
+```bash
+git clone https://github.com/TopTrenDev/TopTrenDev-portfolio
+```
+
+### Navigate into the project folder
+
+```bash
+cd TopTrenDev-portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```

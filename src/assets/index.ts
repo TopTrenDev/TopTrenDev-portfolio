@@ -43,6 +43,7 @@ import bonkfunProject from "/projects/bonkfun.png";
 import plinkoProject from "/projects/plinko.png";
 import jackpotProject from "/projects/jackpot.png";
 import pumpfunProject from "/projects/pumpfun.webp";
+import meteoraProject from "/projects/meteora.jpg";
 
 // Avatar
 import avatar from "/avatar/avatar.webp";
@@ -86,6 +87,7 @@ export {
   plinkoProject,
   jackpotProject,
   pumpfunProject,
+  meteoraProject,
   avatar,
   bl33hIcon,
 };

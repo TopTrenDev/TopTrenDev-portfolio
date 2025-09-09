@@ -5,8 +5,8 @@ const Projects = () => {
   return (
     <div className="w-full flex justify-center" id="projects">
       <div className="w-full xl:w-[70%] flex flex-col pb-16">
-        <div className="w-full ">
-          <SectionTitle title="PROJECTS" subtitle="What I have done so far" />
+        <div className="w-full">
+          <SectionTitle title="PROJECTS" subtitle="My Creative Work" />
         </div>
         <Works />
       </div>

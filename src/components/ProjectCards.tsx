@@ -2,6 +2,7 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
 import { useState } from "react";
+import { useTheme } from "../contexts/ThemeContext";
 // import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
@@ -120,6 +121,8 @@ const ProjectCard = ({
   // source_code_link,
   demo_link,
 }: ProjectCardProps) => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
   const cardVariants = {
     hidden: { 
       opacity: 0, 
@@ -185,7 +188,11 @@ const ProjectCard = ({
             reset: true,
             easing: "cubic-bezier(.03,.98,.52,.99)",
           }}
-          className="shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%] bg-gradient-to-br from-green-500/10 to-green-600/10 backdrop-blur-sm border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+          className={`shadow-2xl p-5 rounded-xl sm:w-[300px] w-[100%] backdrop-blur-sm border transition-all duration-300 ${
+            isDark
+              ? 'bg-gray-800/50 border-gray-700 hover:border-green-400/40 hover:bg-gray-800/70'
+              : 'bg-white/70 border-gray-200 hover:border-green-400/40 hover:bg-white/90'
+          }`}
         >
           <m.div
             className="relative overflow-hidden rounded-lg"
@@ -229,7 +236,9 @@ const ProjectCard = ({
           
           <m.div variants={contentVariants} className="mt-3">
             <m.h3 
-              className="text-grayscale-50 font-bold text-2xl group-hover:text-green-400 transition-colors duration-300"
+              className={`font-bold text-2xl group-hover:text-green-400 transition-colors duration-300 ${
+                isDark ? 'text-white' : 'text-gray-900'
+              }`}
               whileHover={{ 
                 scale: 1.05,
                 transition: { duration: 0.2 }
@@ -237,7 +246,9 @@ const ProjectCard = ({
             >
               {name}
             </m.h3>
-            <m.p className="mt-2 text-secondary text-[14px] leading-snug group-hover:text-green-300 transition-colors duration-300">
+            <m.p className={`mt-2 text-[14px] leading-snug group-hover:text-green-300 transition-colors duration-300 ${
+              isDark ? 'text-gray-300' : 'text-gray-600'
+            }`}>
               {description}
             </m.p>
           </m.div>
@@ -295,6 +306,8 @@ const categories = [
 
 const Works = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
   const filteredProjects =
     activeCategory === "All"
@@ -361,7 +374,11 @@ const Works = () => {
               className={`px-8 py-2 mx-1 rounded-full text-lg font-semibold border relative overflow-hidden ${
                 activeCategory === category
                   ? "bg-gradient-to-r from-green-500 to-green-600 text-white border-green-500 shadow-lg shadow-green-500/25"
-                  : "bg-transparent text-secondary border-secondary hover:border-green-400"
+                  : `bg-transparent border ${
+                      isDark 
+                        ? 'text-gray-300 border-gray-600 hover:border-green-400 hover:text-green-400' 
+                        : 'text-gray-700 border-gray-300 hover:border-green-400 hover:text-green-600'
+                    }`
               } transition-all duration-300`}
               whileHover={{ 
                 scale: 1.05,
@@ -386,7 +403,7 @@ const Works = () => {
         {/* Project Cards */}
         <m.div 
           variants={projectsVariants}
-          className="mt-5 flex flex-wrap justify-center gap-4 text-grayscale-50 w-full"
+          className="mt-5 flex flex-wrap justify-center gap-6 w-full"
         >
           {filteredProjects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />

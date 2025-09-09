@@ -48,6 +48,7 @@ import {
   plinkoProject,
   jackpotProject,
   pumpfunProject,
+  meteoraProject,
   goIcon,
   solidityIcon,
   mongodbIcon,
@@ -121,6 +122,42 @@ export const navLinks = [
 
 export const projects = [
   {
+    name: "Solana Solbet Jackpot Game",
+    description:
+      "A Solana jackpot game where players deposit tokens into a pool and one lucky winner takes it all—secured by on-chain randomness and lightning-fast transactions.",
+    image: jackpotProject,
+    source_code_link: "",
+    demo_link: "https://solpot.com/",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
+    name: "Solana Plinko Game",
+    description:
+      "A Solana Plinko game where players drop tokens to bounce through pegs and land in prize slots—combining luck, strategy, and fast, low-cost on-chain gameplay.",
+    image: plinkoProject,
+    source_code_link: "",
+    demo_link: "https://spribe.co/games/plinko",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
+    name: "Pump.fun Fork Smart Contract",
+    description:
+      "A Pump.fun fork smart contract that enables fair token launches with bonding curve-based pricing, auto-liquidity provisioning, and community-driven price discovery—all fully on-chain.",
+    image: pumpfunProject,
+    source_code_link: "",
+    demo_link: "https://pump.fun/",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
+    name: "Meteora Token Lock Smart Contract",
+    description:
+      "A smart contract that securely locks project tokens/liquidity on Solana until a fixed unlock time — boosting trust for launches on Meteora.",
+    image: meteoraProject,
+    source_code_link: "",
+    demo_link: "https://docs.meteora.ag/overview/other-products/meteora-lock/what-is-meteora-lock",
+    category: ["Solana", "Smart Contract"],
+  },
+  {
     name: "Rafflor",
     description:
       "Rafflor is a Web3 raffle platform on Aptos, offering fair, on-chain giveaways for the Aptos Monkeys community.",
@@ -155,33 +192,6 @@ export const projects = [
     source_code_link: "",
     demo_link: "https://www.feedhive.com/",
     category: "AI",
-  },
-  {
-    name: "Solana Solbet Jackpot Game",
-    description:
-      "A Solana jackpot game where players deposit tokens into a pool and one lucky winner takes it all—secured by on-chain randomness and lightning-fast transactions.",
-    image: jackpotProject,
-    source_code_link: "",
-    demo_link: "https://solpot.com/",
-    category: ["Solana", "Smart Contract"],
-  },
-  {
-    name: "Solana Plinko Game",
-    description:
-      "A Solana Plinko game where players drop tokens to bounce through pegs and land in prize slots—combining luck, strategy, and fast, low-cost on-chain gameplay.",
-    image: plinkoProject,
-    source_code_link: "",
-    demo_link: "https://spribe.co/games/plinko",
-    category: ["Solana", "Smart Contract"],
-  },
-  {
-    name: "Pump.fun Fork Smart Contract",
-    description:
-      "A Pump.fun fork smart contract that enables fair token launches with bonding curve-based pricing, auto-liquidity provisioning, and community-driven price discovery—all fully on-chain.",
-    image: pumpfunProject,
-    source_code_link: "",
-    // demo_link: "https://petenottage.co.uk/",
-    category: ["Solana", "Smart Contract"],
   },
   {
     name: "Swaplace",
