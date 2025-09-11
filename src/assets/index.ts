@@ -42,7 +42,7 @@ import sniperbotProject from "/projects/sniperbot.jpg";
 import bonkfunProject from "/projects/bonkfun.png";
 import plinkoProject from "/projects/plinko.png";
 import jackpotProject from "/projects/jackpot.png";
-import pumpfunProject from "/projects/pumpfun.webp";
+import pumpfunProject from "/projects/pumpfun.jpg";
 import meteoraProject from "/projects/meteora.jpg";
 
 // Avatar
