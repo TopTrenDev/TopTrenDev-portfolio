@@ -113,7 +113,7 @@ const About = () => {
                       </m.span>
                     ) : index === 4 ? (
                       <m.a 
-                        href="https://cvdesignr.com/p/6844a48db51d7" 
+                        href="" 
                         target="_blank"
                         className="inline-block"
                         whileHover={{ 
